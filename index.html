@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ISK token</title>
+        <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1>ISK token</h1>
+        <p>
+            This is a simple ERC20 token that is deployed on the Goerli test
+            network as the homework for Innopolis Blockchain elective course. 
+            <br>
+            Token name is Ishkineev and symbol is ISK. Total supply of ISK is 10000000. Token decimal is 18.
+            <br>
+            Each transfer, 50 ISK is sent as a fee to address 0xD8C7978Be2A06F5752cB727fB3B7831B70bF394d.
+            <br>
+            (c) 2023 Iskander Ishkineev
+        <br><br>
+        <h2>Transfer</h2>
+        <form>
+            <label for="address">Recipient Address:</label>
+            <br />
+            <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Enter recipient's address"
+                required
+            />
+            <br /><br />
+            <label for="amount">Amount:</label>
+            <br />
+            <input
+                type="number"
+                id="amount"
+                name="amount"
+                placeholder="Enter the amount to send"
+                required
+            />
+            <br /><br />
+            <button type="button" class="redButton" onclick="transfer()">
+                Transfer
+            </button>
+            <p id="transferResult"></p>
+        </form>
+
+        <h2>Balance</h2>
+        <div>
+            <label for="inputAddress">Account Address:</label>
+            <br />
+            <input
+                type="text"
+                id="inputAddress"
+                placeholder="Enter account address"
+            />
+            <button type="button" class="blueButton" onclick="showBalance()">
+                Show Balance
+            </button>
+        </div>
+        <p id="balanceResult"></p>
+
+        <script src="index.js"></script>
+    </body>
+</html>

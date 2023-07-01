@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.redButton {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #c82a2a; /* Red color */
+    color: white;
+    cursor: pointer;
+}
+
+.blueButton {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #154585; /* Blue color */
+    color: white;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#balanceResult {
+    font-weight: bold;
+    margin-top: 10px;
+}
