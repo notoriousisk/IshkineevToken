@@ -1,1 +1,1 @@
-# IshkineevToken
+# ISK Token
